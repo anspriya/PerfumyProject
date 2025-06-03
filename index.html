@@ -11,15 +11,15 @@
         <nav>
             <h1>Perfumy</h1>
             <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
     <div class="searchbar">
-        <input placeholder="Search">
+        <input placeholder="Search" id="searchInput" onkeyup="filterproducts()">
 
     </div>
     <div class="products">
@@ -52,6 +52,17 @@
             Mumbai, Maharashtra, 400067</p>
 
     </div>
+    <script>
+        function filterproducts(){
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const boxes= document.querySelectorAll(".box")
+            boxes.forEach(box => {
+                const text = box.innerText.toLowerCase();
+                box.style.display = text.includes(input)?"inline-block" : "none";
+                
+            });
+        }
+    </script>
 
 </body>
 </html>

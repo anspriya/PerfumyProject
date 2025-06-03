@@ -27,7 +27,14 @@ nav li{
     cursor: pointer;
     text-align: center;
 }
+nav a{
+    text-decoration: none;
+    color:white;
 
+}
+nav a:hover{
+    color:aqua;
+}
 li:hover{
     color: white;
 }
@@ -53,6 +60,9 @@ input{
 }
 .products{
     text-align: center;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
 }
 .about{
     text-align: center;
