@@ -5,17 +5,27 @@
 nav{
     background-color: black;
     color: whitesmoke;
-    padding: 15px
+    padding: 15px;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+
 }
 li,h1,ul{
-    display: inline;
+    display: flex;
 }
-ul{
-    margin-left: 60%;
+nav ul{
+    gap:15px;
+    display: flex;
 }
-li{
-    color: gray;
+nav h1{
+    margin:0;
+}
+
+nav li{
+    color: rgb(243, 235, 235);
     cursor: pointer;
+    text-align: center;
 }
 
 li:hover{
@@ -36,6 +46,7 @@ input{
     display: inline-block;
     text-align: center;
     width: 250px;
+    margin-top:15px;
 }
 .box:hover{
    background-color:aqua
@@ -46,6 +57,7 @@ input{
 .about{
     text-align: center;
     margin-top: 10px;
+    margin-left:10px;
 }
 .contact{
     background-color: black;
